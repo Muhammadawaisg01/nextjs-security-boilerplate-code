@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Dashboard Styles */
+  .dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-header h1 {
+    color: #222;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  /* Grid Layout */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Section Styles */
+  .dashboard-section {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .dashboard-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Notifications Section */
+  .notifications {
+    border-left: 5px solid #007bff;
+  }
+  
+  .notifications h1 {
+    color: #007bff;
+  }
+  
+  /* Revenue Section */
+  .revenue {
+    border-left: 5px solid #28a745;
+  }
+  
+  .revenue h1 {
+    color: #28a745;
+  }
+  
+  /* Users Section */
+  .users {
+    border-left: 5px solid #ffc107;
+  }
+  
+  .users h1 {
+    color: #ffc107;
+  }
+
+  /* Contact us Section */
+  .contact_us {
+    border-left: 5px solid #ff002b;
+  }
+  
+  .contact_us h1 {
+    color: #ff002b;
+  }
+
+  .contact_us .contact-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .contact_us .contact-btn:hover {
+    background-color: #0056b3;
+  }
+
+  
+  /* Login Section */
+  .login {
+    border-left: 5px solid #dc3545;
+    text-align: center;
+  }
+  
+  .login h1 {
+    color: #dc3545;
+  }
+  
+  .login .login-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .login .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
