@@ -8,13 +8,6 @@ const nextConfig = {
     }
 };
 
-module.exports = {
-    experimental: {
-      runtime: 'nodejs',
-    },
-  };
-
-
 export default nextConfig;
 
 
