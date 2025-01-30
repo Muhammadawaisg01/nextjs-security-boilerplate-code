@@ -1,7 +1,28 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    eslint: {
+        ignoreDuringBuilds: true,
+      },
+    experimental:{
+        runtime: 'nodejs',
+    }
+};
 
-
+module.exports = {
+    experimental: {
+      runtime: 'nodejs',
+    },
+  };
 
 
 export default nextConfig;
+
+
+// import type { NextConfig } from "next";
+// const nextConfig: NextConfig = {
+//   eslint: {
+//     ignoreDuringBuilds: true,
+//   },
+// };
+// export default nextConfig;
+
