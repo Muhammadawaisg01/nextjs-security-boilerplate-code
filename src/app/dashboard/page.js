@@ -2,8 +2,7 @@
 
 "use client"
 
-import networkRequest from "@/utils/networkRequest";
-import axios from "axios";
+import { sendSignoutRequest, getLoggedInUser } from "@/utils/utils";
 import { signOut, useSession } from "next-auth/react"
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -72,27 +71,5 @@ export default function Dashboard() {
     );
 }
 
-export const getLoggedInUser = async () =>{
-
-    const response = await networkRequest({ 
-        method:"GET" ,
-        url:"get_user_from_token" ,
-        data:{}
-      });
-
-    return response.data; 
-}
-
-
-export const sendSignoutRequest = async () => {
-
-    const response = await networkRequest({ 
-        method:"GET" ,
-        url:"signout" ,
-        data:{}
-      });
-
-    return response;
-}
 
 

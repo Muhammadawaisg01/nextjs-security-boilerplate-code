@@ -10,7 +10,9 @@ export function middleware(request) {
     // Allow specific routes without authentication
     if (
         pathname.startsWith("/login_page") ||
-        pathname.startsWith("/signup_page")
+        pathname.startsWith("/signup_page") ||
+        pathname.startsWith("/test_page")
+
     ) {
         return NextResponse.next();
     }
